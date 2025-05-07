@@ -1,0 +1,82 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(
+    to bottom right,
+    #0a0f14,
+    #121e26,
+    #1c2d38
+  ); /* fundo mais escuro */
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.App {
+  background: rgba(0, 0, 0, 0.5); /* fundo da caixa central mais escuro */
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px); /* blur mais suave */
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #ddd; /* texto um pouco mais claro */
+}
+
+.link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.05); /* leve transparência */
+  color: #e0e0e0;
+  text-decoration: none;
+  margin: 12px 0;
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.link-button:hover {
+  background: rgba(255, 255, 255, 0.02); /* ainda mais sutil */
+  border: 2px solid #3b82f6; /* azul mais frio e discreto */
+  color: #3b82f6;
+}
+
+.link-button .icon {
+  font-size: 1.2rem;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 50%;
+  border: 3px solid #1e90ff;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.6);
+}
